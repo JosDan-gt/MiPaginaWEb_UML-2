@@ -1,0 +1,25 @@
+@startuml CasoDeUso
+
+
+left to right direction
+actor Gerente
+rectangle "Empleados"{
+    Gerente -->(Crear empleado)
+    Gerente -->(Actulizar empleado)
+    Gerente -->(Eliminar empleado)
+}
+
+rectangle "Usuarios"{
+    Gerente -->(Crear Usuario)
+    Gerente -->(Actulizar Usuario)
+    Gerente -->(Eliminar Usuario)
+
+}
+
+rectangle "Puestos"{
+    Gerente -->(Crear Puestos)
+    Gerente -->(Actulizar Puestos)
+    Gerente -->(Eliminar Puestos)
+
+}
+@enduml
